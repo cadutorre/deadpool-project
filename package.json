@@ -1,0 +1,33 @@
+{
+    "name": "deadpool-project",
+    "version": "1.0.0-SNAPSHOT",
+    "description": "Um lugar para seu quadrinho.",
+    "main": "gulpfile.js",
+    "scripts": {
+        "postinstall": "npm run typings install",
+        "typings": "typings",
+        "tsc": "tsc",
+        "frontend": "gulp frontend && tsc",
+        "serve": "live-server dist/frontend/"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "del": "^2.2.0",
+        "gulp": "^3.9.1",
+        "live-server": "^1.0.0",
+        "run-sequence": "^1.1.5",
+        "typescript": "^1.8.10",
+        "typings": "^0.8.1"
+    },
+    "dependencies": {
+        "angular2": "2.0.0-beta.15",
+        "systemjs": "0.19.26",
+        "es6-promise": "^3.0.2",
+        "es6-shim": "^0.35.0",
+        "reflect-metadata": "0.1.2",
+        "rxjs": "5.0.0-beta.2",
+        "zone.js": "0.6.10"
+    }
+}
